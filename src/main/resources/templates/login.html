@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Login</title>
+	<!-- Bootstrap -->
+    <link href="http://holmesycl.com/css/bootstrap.min.css" rel="stylesheet" />
+     <!-- ladda -->
+	<link href="http://holmesycl.com/css/ladda.min.css" rel="stylesheet" />
+	<link href="http://holmesycl.com/css/ladda-themeless.min.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://holmesycl.com/js/html5shiv.min.js"></script>
+      <script src="http://holmesycl.com/js/respond.min.js"></script>
+    <![endif]-->
+    
+    <style type="text/css">
+
+    	.lable-style{
+    		font-size: 24px;
+		    font-family: Roboto,sans-serif;
+		    color: #00D2CA;
+		    font-weight: 300;
+    	}
+    	
+    </style>
+</head>
+<body style="background-color: #3c4252;">
+	
+	<div class="container" style="margin-top: 150px;">
+		<div class="panel panel-default col-md-6 col-md-offset-3" style="background-color: #3c4252;">
+		  <div class="panel-body">
+			<form name="form" th:action="@{/login}" action="/login" method="POST">
+			  <div class="form-group">
+			    <label for="username" class="lable-style">Username</label>
+			    <input type="text" class="form-control" id="username" name="username"/>
+			  </div>
+			  <div class="form-group">
+			    <label for="password" class="lable-style">Password</label>
+			    <input type="password" class="form-control" id="password" name="password"/>
+			  </div>
+			  <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-top: 30px;background: rgb(231,30,98) !important;">Login</button>
+			</form>
+		  </div>
+		</div>
+	</div>
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://holmesycl.com/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://holmesycl.com/js/bootstrap.min.js"></script>
+
+</body>
+</html>

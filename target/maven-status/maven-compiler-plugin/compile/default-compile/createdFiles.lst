@@ -1,0 +1,9 @@
+com\asiainfo\util\TimeUtil.class
+com\asiainfo\redis\RedisConstants.class
+com\asiainfo\config\ApplicationSecurity.class
+com\asiainfo\controller\CheckinController.class
+com\asiainfo\bo\Recipient.class
+com\asiainfo\CheckinApplication.class
+com\asiainfo\bo\Logs.class
+com\asiainfo\controller\HomeController.class
+com\asiainfo\controller\CheckinController$1.class
